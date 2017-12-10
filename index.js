@@ -6,4 +6,4 @@ app.get('/', (req, res) => {
 	res.send('hello, world')
 })
 
-app.listen(8080, () => console.log('Node.js app listening on port 8080!'))
+app.listen(8080, () => console.log('Node.js app is listening on port: 8080'))
