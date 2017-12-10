@@ -1,7 +1,13 @@
 {
 	"name": "hello",
+	"description": "hello, world",
 	"version": "1.0.0",
+	"repository": { 
+		"type": "git",
+		"url": "https://github.com/ArtiomL/docker-hello-world.git"
+	},
 	"dependencies": {
 		"express": "*"
-	}
+	},
+	"license": "MIT"
 }
