@@ -7,7 +7,8 @@
 		"url": "https://github.com/ArtiomL/docker-hello-world.git"
 	},
 	"dependencies": {
-		"express": "*"
+		"crasher": "latest",
+		"express": "latest"
 	},
 	"license": "MIT"
 }
