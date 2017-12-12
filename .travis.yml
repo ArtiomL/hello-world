@@ -4,8 +4,7 @@ node_js:
 
 install:
   - npm install
-  - node index.js &
-  - netstat -anvp
+  - node index.js
 
 script:
   - curl http://127.0.0.1:8080/ -v
