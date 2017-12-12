@@ -1,1 +1,10 @@
+language: node_js
+node_js:
+  - "lts/*"
 
+install:
+  - sudo apt-get install -y curl
+  - npm install
+
+script:
+  - curl -s http://127.0.0.1:8080/ | grep 'hello, world'
