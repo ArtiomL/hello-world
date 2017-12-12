@@ -8,4 +8,4 @@ install:
   - node index.js &
 
 script:
-  - curl -s http://127.0.0.1:8080/ | grep 'hello, world'
+  - curl -s http://127.0.0.1:8080/
