@@ -6,5 +6,7 @@ install:
   - npm install
 
 script:
-  - node index.js &
+  - node index.js & > test.log
+  - cat test.log
+  - netstat -anvp
   - curl http://127.0.0.1:8080/ -v
