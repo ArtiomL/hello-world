@@ -4,9 +4,8 @@ node_js:
 
 install:
   - npm install
+  - node index.js &
+  - sleep 3
 
 script:
-  - nohup node index.js &
-  - sleep 5
-  - netstat -anvp
-  - curl http://127.0.0.1:8080/ -v
+  - curl -s http://127.0.0.1:8080/ | grep 'hello, world'
