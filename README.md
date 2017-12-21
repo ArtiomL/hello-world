@@ -5,4 +5,15 @@
 
 &nbsp;&nbsp;
 
+## Table of Contents
+- [Description](#description)
+- [Documentation](#documentation)
+- [License](LICENSE)
+
+&nbsp;&nbsp;
+
+## Description
+
 Containers Training: Hands-on introduction to Docker.
+
+## Documentation
