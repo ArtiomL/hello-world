@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/ArtiomL/docker-hello-world.svg?branch=master)](https://travis-ci.org/ArtiomL/docker-hello-world)
 
+&nbsp;&nbsp;
+
 ## Table of Contents
 
 * [Why Docker](#why-docker)
@@ -21,6 +23,8 @@
 * [Tips](#tips)
 * [Contributing](#contributing)
 
+&nbsp;&nbsp;
+
 ## Why Docker
 
 "With Docker, developers can build any app in any language using any toolchain. “Dockerized” apps are completely portable and can run anywhere - colleagues’ OS X and Windows laptops, QA servers running Ubuntu in the cloud, and production data center VMs running Red Hat.
@@ -29,9 +33,9 @@ Developers can get going quickly by starting with one of the 13,000+ apps availa
 
 Docker helps developers build and ship higher-quality applications, faster." -- [What is Docker](https://www.docker.com/what-docker#copy1)
 
-## Prerequisites
+&nbsp;&nbsp;
 
-I use [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) with the [Docker plugin](https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins#docker) for autocompletion of docker commands. YMMV.
+## Prerequisites
 
 ### Linux
 
