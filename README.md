@@ -8,6 +8,8 @@
 
 * [Why Docker](#why-docker)
 * [Prerequisites](#prerequisites)
+	* [Linux](#linux)
+	* [macOS](#macos)
 * [Installation](#installation)
 * [Containers](#containers)
 * [Images](#images)
@@ -41,7 +43,7 @@ Docker helps developers build and ship higher-quality applications, faster." -- 
 
 The 3.10.x kernel is [the minimum requirement](https://docs.docker.com/engine/installation/binaries/#check-kernel-dependencies) for Docker.
 
-### MacOS
+### macOS
 
  10.8 “Mountain Lion” or newer is required.
 
