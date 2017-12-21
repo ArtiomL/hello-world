@@ -1,4 +1,4 @@
-# hello, world
+# <img align="center" src="img/docker.svg" height="64">&nbsp;&nbsp;hello, world
 
 [![Build Status](https://travis-ci.org/ArtiomL/hello-world.svg?branch=master)](https://travis-ci.org/ArtiomL/hello-world)
 
