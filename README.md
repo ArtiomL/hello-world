@@ -5,15 +5,12 @@
 
 &nbsp;&nbsp;
 
-## Table of Contents
-- [Description](#description)
-- [Documentation](#documentation)
-- [License](LICENSE)
-
-&nbsp;&nbsp;
-
 ## Description
 
 Containers Training: Hands-on introduction to Docker.
 
+&nbsp;&nbsp;
+
 ## Documentation
+
+Start [here](https://github.com/wsargent/docker-cheat-sheet).
