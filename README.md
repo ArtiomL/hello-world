@@ -1,6 +1,7 @@
 # <img align="center" src="img/docker.svg" width="96">&nbsp;&nbsp;hello, world
 
 [![Build Status](https://travis-ci.org/ArtiomL/hello-world.svg?branch=master)](https://travis-ci.org/ArtiomL/hello-world)
+[![Docker Hub](https://img.shields.io/docker/pulls/artioml/hello-world.svg)](https://hub.docker.com/r/artioml/hello-world/)
 
 &nbsp;&nbsp;
 
