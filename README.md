@@ -45,6 +45,8 @@ The 3.10.x kernel is [the minimum requirement](https://docs.docker.com/engine/in
 
  10.8 “Mountain Lion” or newer is required.
 
+&nbsp;&nbsp;
+
 ## Installation
 
 ### Linux
@@ -84,6 +86,8 @@ docker run hello-world
 That's it, you have a running Docker container.
 
 If you are a complete Docker newbie, you should probably follow the [series of tutorials](https://docs.docker.com/engine/getstarted/) now.
+
+&nbsp;&nbsp;
 
 ## Containers
 
