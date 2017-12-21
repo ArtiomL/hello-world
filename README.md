@@ -19,5 +19,5 @@ Start [here](https://github.com/wsargent/docker-cheat-sheet).
 
 ## Next
 
-- [Fork](https://github.com/artioml/hello-world/fork) and DIY
-- [adct](https://github.com/ArtiomL/adct)
+- [ ] [Fork](https://github.com/artioml/hello-world/fork) and build it yourself
+- [ ] Start using [adct](https://github.com/ArtiomL/adct)
