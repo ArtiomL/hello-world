@@ -1,11 +1,16 @@
+sudo: required
+
 language: node_js
 node_js:
   - "lts/*"
 
-install:
-  - npm install
-  - node index.js &
-  - sleep 3
+services:
+  - docker
+
+before_install:
+  - docker pull artioml/hello-world
+  - docker run -dit -p 80:8080 artioml/hello-world
+  - docker ps -a
 
 script:
-  - curl -s http://127.0.0.1:8080/ | grep 'hello, world'
+  - curl -s http://127.0.0.1/ | grep 'hello, world'
