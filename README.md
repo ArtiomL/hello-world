@@ -20,6 +20,7 @@
 	- [top](#top)
 	- [stats](#stats)
 	- [kill](#kill)
+	- [--publish-all](#publishall)
 - [Next](#next)
 - [License](LICENSE)
 
@@ -58,9 +59,14 @@ docker pull artioml/hello-world
 
 #### `run`
 ```shell
-docker run -dit -p 80:8080 --name dhw artioml/hello-world
+docker run -dit -p 80:8080 artioml/hello-world
 # List running containers
 docker ps
+# Test and crash the app
+curl http://127.0.0.1/app
+curl http://127.0.0.1/kill
+# Run again and assign a name
+docker run -dit -p 80:8080 --name dhw artioml/hello-world
 ```
 
 #### `logs`
@@ -93,7 +99,11 @@ docker commit dhw hello-world:2.0
 ```shell
 # Remove a container
 docker rm -f dhw
-docker run -dit -p 80:8080 --name dhw hello-world:2.0
+# Run and restart if the container exits with a non-zero exit status
+docker run -dit -p 80:8080 --name dhw --restart on-failure hello-world:2.0
+# Test and crash the app
+curl http://127.0.0.1/app
+curl http://127.0.0.1/kill
 docker logs -f dhw
 ```
 
@@ -113,6 +123,16 @@ docker stats dhw
 ```shell
 # Kill one or more running containers
 docker kill dhw
+```
+
+#### `--publish-all`
+```shell
+# Publish all exposed ports to random ports (multiple instances)
+for i in {1..3}; do
+	docker run -ditP hello-world:2.0
+done
+# List running containers and examine the ports
+docker ps
 ```
 
 &nbsp;&nbsp;
