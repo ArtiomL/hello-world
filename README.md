@@ -67,6 +67,7 @@ netstat -lnp | grep ':::80'
 # Test and crash the app
 curl http://127.0.0.1/app
 curl http://127.0.0.1/kill
+curl http://127.0.0.1/app
 # Run again and assign a name
 docker run -dit -p 80:8080 --name dhw artioml/hello-world
 ```
@@ -102,11 +103,12 @@ docker commit dhw hello-world:2.0
 ```shell
 # Remove a container
 docker rm -f dhw
-# Run and restart if the container exits with a non-zero exit status
+# Run (new version) and restart if the container exits with a non-zero exit status
 docker run -dit -p 80:8080 --name dhw --restart on-failure hello-world:2.0
 # Test and crash the app
 curl http://127.0.0.1/app
 curl http://127.0.0.1/kill
+curl http://127.0.0.1/app
 docker logs -f dhw
 ```
 
@@ -136,6 +138,8 @@ for i in {1..3}; do
 done
 # List running containers and examine the ports
 docker ps
+# Display listening server sockets (note docker-proxy)
+netstat -lnp | grep ':::32'
 ```
 
 &nbsp;&nbsp;
@@ -147,3 +151,4 @@ docker ps
 - Setup Continuous Integration with [Travis CI](https://travis-ci.org/)
 - Start using [adct](https://github.com/ArtiomL/adct)
 - Contribute!
+:octocat:
