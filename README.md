@@ -65,20 +65,20 @@ docker logs -f dhw
 ```
 
 #### `exec`
-```
+```shell
 # Run a command in a running container
 docker exec -it dhw /bin/sh
 sed -i 's/Node.js app/Node.js app v2.0/' index.js
 ```
 
 #### `commit`
-```
+```shell
 # Create a new image from a container's changes
 docker commit dhw hello-world:2.0
 ```
 
 #### `rm`
-```
+```shell
 # Remove a container
 docker rm -f dhw
 docker run -dit -p 80:8080 --name dhw hello-world:2.0
