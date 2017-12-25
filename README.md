@@ -146,9 +146,8 @@ netstat -lnp | grep ':::32'
 
 ## Next
 
-- [Fork](https://github.com/artioml/hello-world/fork) and build it yourself
+- [Fork](https://github.com/artioml/hello-world/fork) and build it yourself ([Dockerfile](Dockerfile))
 - Configure [automated builds](https://docs.docker.com/docker-hub/github/) on Docker Hub
-- Setup Continuous Integration with [Travis CI](https://travis-ci.org/)
+- Setup Continuous Integration with [Travis CI](https://travis-ci.org/) ([.travis.yml](.travis.yml))
 - Start using [adct](https://github.com/ArtiomL/adct)
 - Contribute!
-:octocat:
