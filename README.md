@@ -9,9 +9,9 @@
 - [Description](#description)
 - [Documentation](#documentation)
 - [Lab](#lab)
-	- [Build](#build)
-	- [Pull](#pull)
-	- [Run](#run)
+	- [build](#build)
+	- [pull](#pull)
+	- [run](#run)
 - [Next](#next)
 - [License](LICENSE)
 
@@ -32,19 +32,19 @@ Start [here](https://github.com/wsargent/docker-cheat-sheet).
 
 ## Lab
 
-#### Build
+#### `build`
 ```shell
 git clone https://github.com/ArtiomL/hello-world.git
 cd hello-world
 docker build -t hello-world .
 ```
 
-#### Pull
+#### `pull`
 ```
 docker pull artioml/hello-world
 ```
 
-#### Run
+#### `run`
 ```
 docker run -dit -p 80:8080 --name hello artioml/hello-world
 ```
