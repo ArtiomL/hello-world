@@ -50,23 +50,30 @@ docker pull artioml/hello-world
 
 #### `run`
 ```
-docker run -dit -p 80:8080 --name hello artioml/hello-world
+docker run -dit -p 80:8080 --name dhw artioml/hello-world
 ```
 
 #### `logs`
 ```
-docker logs -f hello
+docker logs -f dhw
 ```
 
 #### `exec`
 ```
-docker exec -it hello /bin/sh
+docker exec -it dhw /bin/sh
 sed -i 's/Node.js app/Node.js app v2.0/' index.js
 ```
 
 #### `commit`
 ```
-docker commit hello hello-world:2.0
+docker commit dhw hello-world:2.0
+```
+
+#### `rm`
+```
+docker rm -f dhw
+docker run -dit -p 80:8080 --name dhw hello-world:2.0
+docker logs -f dhw
 ```
 
 &nbsp;&nbsp;
