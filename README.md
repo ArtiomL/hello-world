@@ -9,8 +9,9 @@
 - [Description](#description)
 - [Documentation](#documentation)
 - [Lab](#lab)
-	- [Main Site](#main-site)
-	- [WebSocket Echo](#websocket-echo)
+	- [Build](#build)
+	- [Pull](#pull)
+	- [Run](#run)
 - [Next](#next)
 - [License](LICENSE)
 
