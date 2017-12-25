@@ -12,6 +12,10 @@
 	- [build](#build)
 	- [pull](#pull)
 	- [run](#run)
+	- [logs](#logs)
+	- [exec](#exec)
+	- [commit](#commit)
+	
 - [Next](#next)
 - [License](LICENSE)
 
@@ -47,6 +51,22 @@ docker pull artioml/hello-world
 #### `run`
 ```
 docker run -dit -p 80:8080 --name hello artioml/hello-world
+```
+
+#### `logs`
+```
+docker logs -f hello
+```
+
+#### `exec`
+```
+docker exec -it hello /bin/sh
+sed -i 's/Node.js app/Node.js app v2.0/' index.js
+```
+
+#### `commit`
+```
+docker commit hello hello-world:2.0
 ```
 
 &nbsp;&nbsp;
