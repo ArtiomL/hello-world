@@ -55,7 +55,7 @@ docker pull artioml/hello-world
 #### `run`
 ```shell
 docker run -dit -p 80:8080 --name dhw artioml/hello-world
-# List containers
+# List running containers
 docker ps
 ```
 
