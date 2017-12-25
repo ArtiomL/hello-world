@@ -20,7 +20,7 @@
 	- [top](#top)
 	- [stats](#stats)
 	- [kill](#kill)
-	- [--publish-all](#publishall)
+	- [--publish-all](#-p---publish-all)
 - [Next](#next)
 - [License](LICENSE)
 
