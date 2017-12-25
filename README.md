@@ -37,11 +37,16 @@ git clone https://github.com/ArtiomL/hello-world.git
 cd hello-world
 docker build -t hello-world .
 ```
-#### Pull
-`docker pull artioml/hello-world`
-#### Run
-`docker run -dit -p 80:8080 --name hello artioml/hello-world`
 
+#### Pull
+```
+docker pull artioml/hello-world
+```
+
+#### Run
+```
+docker run -dit -p 80:8080 --name hello artioml/hello-world
+```
 
 &nbsp;&nbsp;
 
