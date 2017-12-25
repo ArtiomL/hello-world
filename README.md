@@ -14,8 +14,12 @@
 	- [run](#run)
 	- [logs](#logs)
 	- [exec](#exec)
+	- [diff](#diff)
 	- [commit](#commit)
 	- [rm](#rm)
+	- [top](#top)
+	- [stats](#stats)
+	- [kill](#kill)
 - [Next](#next)
 - [License](LICENSE)
 
@@ -73,6 +77,12 @@ sed -i 's/Node.js app/Node.js app v2.0/' index.js
 exit
 ```
 
+#### `diff`
+```shell
+# Inspect changes to files or directories on a container's filesystem
+docker diff dhw
+```
+
 #### `commit`
 ```shell
 # Create a new image from a container's changes
@@ -85,6 +95,24 @@ docker commit dhw hello-world:2.0
 docker rm -f dhw
 docker run -dit -p 80:8080 --name dhw hello-world:2.0
 docker logs -f dhw
+```
+
+#### `top`
+```shell
+# Display the running processes of a container
+docker top dhw
+```
+
+#### `stats`
+```shell
+# Display a live stream of container(s) resource usage statistics
+docker stats dhw
+```
+
+#### `kill`
+```shell
+# Kill one or more running containers
+docker kill dhw
 ```
 
 &nbsp;&nbsp;
