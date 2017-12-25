@@ -120,5 +120,7 @@ docker kill dhw
 ## Next
 
 - [Fork](https://github.com/artioml/hello-world/fork) and build it yourself
+- Configure [automated builds](https://docs.docker.com/docker-hub/github/) on Docker Hub
+- Setup Continuous Integration with [Travis CI](https://travis-ci.org/)
 - Start using [adct](https://github.com/ArtiomL/adct)
 - Contribute!
