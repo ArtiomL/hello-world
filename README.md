@@ -15,7 +15,7 @@
 	- [logs](#logs)
 	- [exec](#exec)
 	- [commit](#commit)
-	
+	- [rm](#rm)
 - [Next](#next)
 - [License](LICENSE)
 
@@ -40,37 +40,46 @@ Start [here](https://github.com/wsargent/docker-cheat-sheet).
 ```shell
 git clone https://github.com/ArtiomL/hello-world.git
 cd hello-world
+# Build an image from a Dockerfile
 docker build -t hello-world .
+# List images
+docker images
 ```
 
 #### `pull`
-```
+```shell
+# Pull an image or a repository from a registry
 docker pull artioml/hello-world
 ```
 
 #### `run`
-```
+```shell
 docker run -dit -p 80:8080 --name dhw artioml/hello-world
+# List containers
+docker ps
 ```
 
 #### `logs`
-```
+```shell
 docker logs -f dhw
 ```
 
 #### `exec`
 ```
+# Run a command in a running container
 docker exec -it dhw /bin/sh
 sed -i 's/Node.js app/Node.js app v2.0/' index.js
 ```
 
 #### `commit`
 ```
+# Create a new image from a container's changes
 docker commit dhw hello-world:2.0
 ```
 
 #### `rm`
 ```
+# Remove a container
 docker rm -f dhw
 docker run -dit -p 80:8080 --name dhw hello-world:2.0
 docker logs -f dhw
