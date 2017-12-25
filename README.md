@@ -29,6 +29,22 @@ Start [here](https://github.com/wsargent/docker-cheat-sheet).
 
 &nbsp;&nbsp;
 
+## Lab
+
+#### Build
+```shell
+git clone https://github.com/ArtiomL/hello-world.git
+cd hello-world
+docker build -t hello-world .
+```
+#### Pull
+`docker pull artioml/hello-world`
+#### Run
+`docker run -dit -p 80:8080 --name hello artioml/hello-world`
+
+
+&nbsp;&nbsp;
+
 ## Next
 
 - [Fork](https://github.com/artioml/hello-world/fork) and build it yourself
