@@ -68,7 +68,9 @@ docker logs -f dhw
 ```shell
 # Run a command in a running container
 docker exec -it dhw /bin/sh
+# Update the app
 sed -i 's/Node.js app/Node.js app v2.0/' index.js
+exit
 ```
 
 #### `commit`
