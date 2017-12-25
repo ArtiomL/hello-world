@@ -5,6 +5,18 @@
 
 &nbsp;&nbsp;
 
+## Table of Contents
+- [Description](#description)
+- [Documentation](#documentation)
+- [Lab](#lab)
+	- [Main Site](#main-site)
+	- [WebSocket Echo](#websocket-echo)
+- [Next](#next)
+- [License](LICENSE)
+
+
+&nbsp;&nbsp;
+
 ## Description
 
 Containers Training: Hands-on introduction to Docker.
