@@ -73,6 +73,7 @@ docker run -dit -p 80:8080 --name dhw artioml/hello-world
 
 #### `logs`
 ```shell
+# Fetch the logs of a container
 docker logs -f dhw
 ```
 
