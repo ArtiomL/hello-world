@@ -62,6 +62,8 @@ docker pull artioml/hello-world
 docker run -dit -p 80:8080 artioml/hello-world
 # List running containers
 docker ps
+# Display listening server sockets (note docker-proxy)
+netstat -lnp | grep ':::80'
 # Test and crash the app
 curl http://127.0.0.1/app
 curl http://127.0.0.1/kill
@@ -125,7 +127,7 @@ docker stats dhw
 docker kill dhw
 ```
 
-#### `--publish-all`
+#### `-P, --publish-all`
 ```shell
 # Publish all exposed ports to random ports (multiple instances)
 for i in {1..3}; do
