@@ -9,6 +9,7 @@
 - [Description](#description)
 - [Documentation](#documentation)
 - [Lab](#lab)
+	- [monolith](#monolith)
 	- [build](#build)
 	- [pull](#pull)
 	- [run](#run)
@@ -40,6 +41,20 @@ Start [here](https://github.com/veggiemonk/awesome-docker) and [there](https://g
 &nbsp;&nbsp;
 
 ## Lab
+
+#### `monolith`
+```shell
+# Install Node.js
+curl -sL https://deb.nodesource.com/setup_8.x | bash -
+apt-get install -y nodejs
+git clone https://github.com/ArtiomL/hello-world.git
+cd hello-world
+# Install dependencies
+npm install
+# Run the app
+node index.js
+# Restore snapshot
+```
 
 #### `build`
 ```shell
