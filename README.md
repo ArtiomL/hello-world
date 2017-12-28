@@ -51,8 +51,12 @@ git clone https://github.com/ArtiomL/hello-world.git
 cd hello-world
 # Install dependencies
 npm install
-# Run the app
-node index.js
+# Run
+node index.js &
+# Test and crash the app
+curl http://127.0.0.1:8080/app
+curl http://127.0.0.1:8080/kill
+curl http://127.0.0.1:8080/app
 # Restore snapshot
 ```
 
