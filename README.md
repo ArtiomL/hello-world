@@ -35,7 +35,7 @@ Containers Training: Hands-on introduction to Docker.
 
 ## Documentation
 
-Start [here](https://github.com/wsargent/docker-cheat-sheet).
+Start [here](https://github.com/veggiemonk/awesome-docker) and [there](https://github.com/wsargent/docker-cheat-sheet).
 
 &nbsp;&nbsp;
 
