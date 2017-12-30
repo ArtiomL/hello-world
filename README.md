@@ -176,8 +176,7 @@ sudo netstat -lnp | grep ':::32'
 - [Fork](https://github.com/artioml/hello-world/fork) and build it yourself ([Dockerfile](Dockerfile))
 - Configure [automated builds](https://docs.docker.com/docker-hub/github/) on Docker Hub
 - Setup Continuous Integration with [Travis CI](https://travis-ci.org/) ([.travis.yml](.travis.yml))
-
-#### Deploy to [Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime)
+- Deploy to [Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime)
 ```shell
 # Add Heroku apt repository and install the CLI
 sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
@@ -201,6 +200,5 @@ heroku apps:create --region eu
 # Build the image and push to Container Registry
 heroku container:push web
 ```
-
 - Start using [adct](https://github.com/ArtiomL/adct)
 - Contribute!
