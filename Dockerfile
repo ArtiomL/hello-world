@@ -12,5 +12,8 @@ RUN npm install
 # Expose ports
 EXPOSE 8080
 
+# UID to use when running the image and for CMD
+USER 1001
+
 # Run
 CMD ["/usr/bin/node", "index.js"]
