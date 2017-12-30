@@ -7,4 +7,4 @@ app.get('/*', (req, res) => {
 	console.log(new Date().toLocaleTimeString(), req.ip.split(":")[3], req.url)
 })
 
-app.listen(8080, () => console.log('Node.js app is listening on port: 8080'))
+app.listen(process.env.PORT || 8080, function(){ console.log('Node.js app is listening on port:', this.address().port) })
