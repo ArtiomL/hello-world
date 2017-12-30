@@ -31,7 +31,7 @@
 
 ## Description
 
-Containers Training: Hands-on introduction to Docker.
+Containers Training: Hands-on introduction to Docker and CI/CD.
 
 &nbsp;&nbsp;
 
