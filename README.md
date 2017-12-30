@@ -108,7 +108,7 @@ docker logs -f dhw
 #### `exec`
 ```shell
 # Run a command in a running container
-docker exec -it dhw /bin/sh
+docker exec -it -u 0 dhw /bin/sh
 # Update the app
 sed -i 's/Node.js app/Node.js app v2.0/' index.js
 exit
@@ -177,5 +177,28 @@ sudo netstat -lnp | grep ':::32'
 - Configure [automated builds](https://docs.docker.com/docker-hub/github/) on Docker Hub
 - Setup Continuous Integration with [Travis CI](https://travis-ci.org/) ([.travis.yml](.travis.yml))
 - Deploy to [Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime)
+```
+# Add Heroku apt repository and install the CLI
+sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
+curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install heroku
+
+# Login to Heroku
+heroku login
+
+# Login to Container Registry
+heroku container:login
+
+# Clone the repository
+git clone https://github.com/ArtiomL/hello-world.git
+cd hello-world
+
+# Create a Heroku app
+heroku apps:create --region eu
+
+# Build the image and push to Container Registry
+heroku container:push web
+```
 - Start using [adct](https://github.com/ArtiomL/adct)
 - Contribute!
