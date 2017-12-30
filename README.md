@@ -10,6 +10,7 @@
 - [Documentation](#documentation)
 - [Lab](#lab)
 	- [monolith](#monolith)
+	- [usermod](#usermod)
 	- [build](#build)
 	- [pull](#pull)
 	- [run](#run)
@@ -45,8 +46,8 @@ Start [here](https://github.com/veggiemonk/awesome-docker) and [there](https://g
 #### `monolith`
 ```shell
 # Install Node.js
-curl -sL https://deb.nodesource.com/setup_8.x | bash -
-apt-get install -y nodejs
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
 git clone https://github.com/ArtiomL/hello-world.git
 cd hello-world
 # Install dependencies
@@ -58,6 +59,13 @@ curl http://127.0.0.1:8080/app
 curl http://127.0.0.1:8080/kill
 curl http://127.0.0.1:8080/app
 # Restore snapshot
+```
+
+#### `usermod`
+```shell
+# Manage Docker as a non-root user
+sudo usermod -aG docker $USER
+# Log out and log back in so that your group membership is re-evaluated
 ```
 
 #### `build`
@@ -82,7 +90,7 @@ docker run -dit -p 80:8080 artioml/hello-world
 # List running containers
 docker ps
 # Display listening server sockets (note docker-proxy)
-netstat -lnp | grep ':::80'
+sudo netstat -lnp | grep ':::80'
 # Test and crash the app
 curl http://127.0.0.1/app
 curl http://127.0.0.1/kill
@@ -158,7 +166,7 @@ done
 # List running containers and examine the ports
 docker ps
 # Display listening server sockets (note docker-proxy)
-netstat -lnp | grep ':::32'
+sudo netstat -lnp | grep ':::32'
 ```
 
 &nbsp;&nbsp;
