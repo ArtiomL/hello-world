@@ -90,6 +90,8 @@ docker images
 docker pull artioml/hello-world
 ```
 
+&nbsp;
+
 #### `run`
 ```shell
 docker run -dit -p 80:8080 artioml/hello-world
@@ -105,11 +107,15 @@ curl http://127.0.0.1/app
 docker run -dit -p 80:8080 --name dhw artioml/hello-world
 ```
 
+&nbsp;
+
 #### `logs`
 ```shell
 # Fetch the logs of a container (follow output)
 docker logs -f dhw
 ```
+
+&nbsp;
 
 #### `exec`
 ```shell
@@ -120,17 +126,23 @@ sed -i 's/Node.js app/Node.js app v2.0/' index.js
 exit
 ```
 
+&nbsp;
+
 #### `diff`
 ```shell
 # Inspect changes to files or directories on a container's filesystem
 docker diff dhw
 ```
 
+&nbsp;
+
 #### `commit`
 ```shell
 # Create a new image from a container's changes
 docker commit dhw hello-world:2.0
 ```
+
+&nbsp;
 
 #### `rm`
 ```shell
@@ -146,11 +158,15 @@ curl http://127.0.0.1/app
 docker logs -f dhw
 ```
 
+&nbsp;
+
 #### `top`
 ```shell
 # Display the running processes of a container (note UID)
 docker top dhw
 ```
+
+&nbsp;
 
 #### `stats`
 ```shell
@@ -158,11 +174,15 @@ docker top dhw
 docker stats dhw
 ```
 
+&nbsp;
+
 #### `kill`
 ```shell
 # Kill one or more running containers
 docker kill dhw
 ```
+
+&nbsp;
 
 #### `-P, --publish-all`
 ```shell
