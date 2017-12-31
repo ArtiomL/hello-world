@@ -65,6 +65,8 @@ curl http://127.0.0.1:8080/app
 
 #### `usermod`
 ```shell
+# Install Docker CE
+curl -fsSL https://get.docker.com | sh
 # Manage Docker as a non-root user
 sudo usermod -aG docker $USER
 # Log out and log back in so that your group membership is re-evaluated
@@ -203,29 +205,6 @@ sudo netstat -lnp | grep ':::32'
 - [Fork](https://github.com/artioml/hello-world/fork) and build it yourself ([Dockerfile](Dockerfile))
 - Configure [automated builds](https://docs.docker.com/docker-hub/github/) on Docker Hub
 - Setup Continuous Integration with [Travis CI](https://travis-ci.org/) ([.travis.yml](.travis.yml))
-- Deploy to [Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime)
-```shell
-# Add Heroku apt repository and install the CLI
-sudo add-apt-repository "deb https://cli-assets.heroku.com/branches/stable/apt ./"
-curl -L https://cli-assets.heroku.com/apt/release.key | sudo apt-key add -
-sudo apt-get update
-sudo apt-get install heroku
-
-# Login to Heroku
-heroku login
-
-# Login to Container Registry
-heroku container:login
-
-# Clone the repository
-git clone https://github.com/ArtiomL/hello-world.git
-cd hello-world
-
-# Create a Heroku app
-heroku apps:create --region eu
-
-# Build the image and push to Container Registry
-heroku container:push web
-```
+- Deploy to [Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime) ([heroku.sh](heroku.sh))
 - Start using [adct](https://github.com/ArtiomL/adct)
 - Contribute!
