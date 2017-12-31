@@ -61,12 +61,16 @@ curl http://127.0.0.1:8080/app
 # Restore snapshot
 ```
 
+&nbsp;
+
 #### `usermod`
 ```shell
 # Manage Docker as a non-root user
 sudo usermod -aG docker $USER
 # Log out and log back in so that your group membership is re-evaluated
 ```
+
+&nbsp;
 
 #### `build`
 ```shell
@@ -77,6 +81,8 @@ docker build -t hello-world .
 # List images
 docker images
 ```
+
+&nbsp;
 
 #### `pull`
 ```shell
