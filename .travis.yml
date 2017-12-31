@@ -10,7 +10,7 @@ services:
 before_install:
   - docker pull artioml/hello-world
   - docker run -dit -p 80:8080 artioml/hello-world
-  - docker ps -a
+  - docker ps
 
 script:
   - curl -s http://127.0.0.1/ | grep 'hello, world'
