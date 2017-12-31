@@ -107,7 +107,7 @@ docker logs -f dhw
 
 #### `exec`
 ```shell
-# Run a command in a running container
+# Run a command (as root) in a running container
 docker exec -it -u 0 dhw /bin/sh
 # Update the app
 sed -i 's/Node.js app/Node.js app v2.0/' index.js
@@ -135,13 +135,14 @@ docker run -dit -p 80:8080 --name dhw --restart on-failure hello-world:2.0
 # Test and crash the app
 curl http://127.0.0.1/app
 curl http://127.0.0.1/kill
+docker ps
 curl http://127.0.0.1/app
 docker logs -f dhw
 ```
 
 #### `top`
 ```shell
-# Display the running processes of a container
+# Display the running processes of a container (note UID)
 docker top dhw
 ```
 
