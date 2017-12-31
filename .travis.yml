@@ -14,3 +14,7 @@ before_install:
 
 script:
   - curl -s http://127.0.0.1/ | grep 'hello, world'
+
+notifications:
+  slack:
+    secure: "Tq00KjJw3wBfqGCZro/uItlM8X/w0A5Ov1YP0lvN0e9JBqLUB2gvz+DBHeKnkWBuSs5miDPiGW7ESElsSsdXTjLQQZpFfKkegxQMWBADdydF1VA8wCnEqIT+rNtjFVHY+QHi752CEADAkZmXUMyaHyf218n5cAA8rru5S/TB7+K89LrQGiTW9CADtS/9RMtTg6wSxRJ4wnbNgQbBe4CcHgrj3ypXc3/T0dtp+oUN/90fqucXbMQk3/AZlXfsF/b7F+EOTDE5lFYFeczPaBjcxSSmnsN++gViK6OwxmOSjJjuaS3JoL8qZWrnXWriQepoN2jv0GXfHiNLiBJcKs1ZjBCfskhnx6PEQc5CWB8r2VaFCHPl90YgSLxRMlUhII3ILUW1VoUIqNOMI3vnprLWbUSfScnNs5nrxwj7J/od8xXHfhlcVqXE09fRooNQ3Z4sDG79k5xJ2doMiAyyVDTvvn7yH+Ngg97eMAhr20NI3pVOGr3lDyg5EWtNt8r2NkqXY7qVwzEmgmuk9G6QgoEghVvGUPtf7AZvyyRyLl1tWHhZJhSXgov3dGq3MilxR9t/wjSX+wdwkFpJsWNzLzT/k8DzPYalM7g9KOsYPXMv3b84W/y2ufzPKusVJIsT+ppr1VtovT+ALkrg4e77PqmznuzNano4f0eXUAZZY78OrGI="
