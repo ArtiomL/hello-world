@@ -206,6 +206,6 @@ sudo netstat -lnp | grep ':::32'
 - Configure [automated builds](https://docs.docker.com/docker-hub/github/) on Docker Hub
 - Setup Continuous Integration with [Travis CI](https://travis-ci.org/) ([.travis.yml](.travis.yml))
 - Deploy to [Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime) ([heroku.sh](heroku.sh))
-- Advanced: Automate the entire CI/CD pipeline, add Slack notifications
+- Advanced: Automate the entire CI/CD pipeline, add Slack notifications ([example](https://github.com/f5devcentral/f5-hello-world/blob/develop/.travis.yml))
 - Start using [adct](https://github.com/ArtiomL/adct) or [f5-hello-world](https://github.com/f5devcentral/f5-hello-world)
 - Contribute!
