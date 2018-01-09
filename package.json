@@ -10,5 +10,8 @@
 		"crasher": "latest",
 		"express": "latest"
 	},
+	"scripts": {
+		"start" : "node index.js"
+	},
 	"license": "MIT"
 }
