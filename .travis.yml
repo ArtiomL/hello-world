@@ -17,7 +17,7 @@ script:
   - docker build -t $REPO .
   - docker run -dit -p 80:8080 $REPO
   - docker ps -a
-  - curl http://127.0.0.1/
+  - curl -v http://127.0.0.1/
 
 after_success:
   - docker images
