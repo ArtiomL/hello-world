@@ -16,8 +16,9 @@ services:
 script:
   - docker build -t $REPO .
   - docker run -dit -p 80:8080 $REPO
+  - sleep 3
   - docker ps -a
-  - curl -v http://127.0.0.1/
+  - curl -s http://127.0.0.1/ | grep 'hello, world'
 
 after_success:
   - docker images
