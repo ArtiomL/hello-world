@@ -163,7 +163,7 @@ docker push artioml/hello-world:2.0
 # Remove a container
 docker rm -f dhw
 # Run (new version) and restart if the container exits with a non-zero exit status
-docker run -dit -p 80:8080 --name dhw --restart on-failure hello-world:2.0
+docker run -dit -p 80:8080 --name dhw --restart on-failure artioml/hello-world:2.0
 # Test and crash the app
 curl http://127.0.0.1/app
 curl http://127.0.0.1/kill
@@ -202,7 +202,7 @@ docker kill dhw
 ```shell
 # Publish all exposed ports to random ports (multiple instances)
 for i in {1..3}; do
-	docker run -ditP hello-world:2.0
+	docker run -ditP artioml/hello-world:2.0
 done
 # List running containers and examine the ports
 docker ps
