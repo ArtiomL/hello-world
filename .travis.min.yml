@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "lts/*"
+
+install:
+  - npm install
+  - node index.js &
+  - sleep 3
+
+script:
+  - curl -s http://127.0.0.1:8080/ | grep 'hello, world'
