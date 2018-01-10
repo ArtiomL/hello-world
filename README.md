@@ -18,6 +18,7 @@
 	- [exec](#exec)
 	- [diff](#diff)
 	- [commit](#commit)
+	- [push](#push)
 	- [rm](#rm)
 	- [top](#top)
 	- [stats](#stats)
@@ -141,7 +142,18 @@ docker diff dhw
 #### `commit`
 ```shell
 # Create a new image from a container's changes
-docker commit dhw hello-world:2.0
+docker commit dhw artioml/hello-world:2.0
+```
+
+&nbsp;
+
+#### `push`
+```shell
+docker images
+# Log in to a Docker registry
+docker login -u <user> -p <password>
+# Push an image to a registry
+docker push artioml/hello-world:2.0
 ```
 
 &nbsp;
