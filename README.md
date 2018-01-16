@@ -8,6 +8,7 @@
 ## Table of Contents
 - [Description](#description)
 - [Documentation](#documentation)
+- [Prerequisites](#prerequisites)
 - [Lab](#lab)
 	- [monolith](#monolith)
 	- [usermod](#usermod)
@@ -39,6 +40,11 @@ Containers Training: Hands-on introduction to Docker and CI/CD.
 ## Documentation
 
 Start [here](https://github.com/veggiemonk/awesome-docker) and [there](https://github.com/wsargent/docker-cheat-sheet).
+
+&nbsp;&nbsp;
+
+## Prerequisites
+
 
 &nbsp;&nbsp;
 
