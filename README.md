@@ -45,9 +45,10 @@ Start [here](https://github.com/veggiemonk/awesome-docker) and [there](https://g
 
 ## Prerequisites
  - A 64-bit Debian / Ubuntu VM with Internet access (tested with `Debian Stretch v9.3`)
+ - Version 3.10 or higher of the Linux kernel
  - Install the following tools: git, curl, vim (`sudo apt-get update && sudo apt-get install -y curl git vim`)
  - GitHub account: https://github.com/join
- - Travis CI account: https://travis-ci.org/ (Sign in with GitHub)
+ - Travis CI account: https://travis-ci.org/ (sign in with GitHub)
  - Docker Hub account: https://hub.docker.com/
  - Heroku account: https://signup.heroku.com/
 
@@ -102,7 +103,7 @@ docker images
 
 #### `pull`
 ```shell
-# Pull an image or a repository from a registry
+# Pull an image or a repository from a registry (won't work with your own username, yet)
 docker pull artioml/hello-world
 ```
 
