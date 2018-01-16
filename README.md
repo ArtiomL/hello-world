@@ -44,7 +44,12 @@ Start [here](https://github.com/veggiemonk/awesome-docker) and [there](https://g
 &nbsp;&nbsp;
 
 ## Prerequisites
-
+ - A 64-bit Debian / Ubuntu VM with Internet access (tested with `Debian Stretch v9.3`)
+ - Install the following tools: git, curl, vim (`sudo apt-get update && sudo apt-get install -y curl git vim`)
+ - GitHub account: https://github.com/join
+ - Travis CI account: https://travis-ci.org/ (Sign in with GitHub)
+ - Docker Hub account: https://hub.docker.com/
+ - Heroku account: https://signup.heroku.com/
 
 &nbsp;&nbsp;
 
