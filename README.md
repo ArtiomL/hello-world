@@ -50,6 +50,8 @@ Start [here](https://github.com/veggiemonk/awesome-docker) and [there](https://g
 
 ## Lab
 
+Replace `artioml` with your GitHub and Docker Hub username (where applicable) after forking.
+
 #### `monolith`
 ```shell
 # Install Node.js
