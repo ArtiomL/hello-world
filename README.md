@@ -231,8 +231,8 @@ sudo netstat -lnp | grep ':::32'
 
 - [Fork](https://github.com/artioml/hello-world/fork) and build it yourself ([Dockerfile](Dockerfile))
 - Configure [automated builds](https://docs.docker.com/docker-hub/github/) on Docker Hub
-- Setup Continuous Integration with [Travis CI](https://docs.travis-ci.com/user/languages/javascript-with-nodejs/) ([example](.travis.min.yml))
-- Deploy to [Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime) ([heroku.sh](heroku.sh))
+- Setup Continuous Integration with [Travis CI](https://docs.travis-ci.com/user/languages/javascript-with-nodejs/) ([example](scripts/.travis.min.yml))
+- Deploy to [Heroku](https://devcenter.heroku.com/articles/container-registry-and-runtime) ([heroku.sh](scripts/heroku.sh))
 - **Advanced**: Automate the entire CI/CD pipeline, add Slack notifications ([.travis.yml](.travis.yml))
 	- Make sure you [encrypt](https://docs.travis-ci.com/user/encryption-keys/) all credentials and API keys
 - Start using [adct](https://github.com/ArtiomL/adct) or [f5-hello-world](https://github.com/f5devcentral/f5-hello-world)
