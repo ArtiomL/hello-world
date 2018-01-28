@@ -2,7 +2,7 @@ sudo: required
 
 env:
   global:
-  - REPO=artioml/hello-world
+  - REPO="artioml/hello-world"
   - secure: "QLLccKiwCCv76pjHV0Fe5nP94T9fXbxIs4KNdwsFy7mn5k7cQdFYurtjUt4aFTLJvxjpef2tiums0HK6B++gscukzfY6sHqeKe8aZUTkjg7u22K/ClYgyOFtiuH5lq0P0YLUDeAL3YZqhV9YrDYA3dHi97gG/ab/RvGheA4LYFOmpsU61yeJDxbZh0FN83iOrKXQ/ceYis+A7C3/VgXW5p6VkfXF6gCOXog3ENxa4jhxDL6aMhClNalaUPzQGhQ0Riu33weQOgPdc2PNYqZmNyxM3z+iQ7cUaGIlpEPXHY3JhIySJS+ct39DX/jo9I6lkCjkU7TcbEPQfoioPB79jTxvUyPsduqydsfzeA6UJPAAHyGsXDFE6TLEH2OyeSzdzzNYM+1tE6o6B92mVlfTcegh5C928Q9xCjwGqYdBK55b16ZN0QJwhLaOMnxn+I9t8TiYgZDjUy1OPC6e0o+oF4wXhFF85Hf3x+ojR4+8RNQ4EHgs6jV4cp5KaUlxlnNMr1SYfg3uN14tV9O57GCfH93LjkVHEyyPvl+K0p6JenhFjRLr0W5KoM/nDop3aplYjXriy0CgPLbTdMLdewotrInE1IZLuDC/zIB+BqNwQmcUAyJASHdBCGHd4vYtDpRjfcjHXuOEhrIpsyCLITYvv7F+poe/WA8XeCOXt11dV98="
   - secure: "ABmerag0NibwEoHnR5PT3MEO6Ldo29xBWzShM/lc5qZreKQcC5ewjL72VuemLXhWnKu5jsPShf0/UPIaeWjnjJwiMKxqEcTmbAqWpaojCT9I0sNiAxUpbEtyGXX4xMp+0OSkeGM+f46nhuU8AP/Og5qdvo+biSDodzD2Z8rd67mnWbXqot4Vl82XxVdrYvd0a18DtlVd7UrTVnhOBJUK5GXpYled9pbQmcHbIE66CqRKAC7sc2xl1UoFqRcbwXLuA0wXYlbu36qEAKHoV4yeRqG9lNo6EltDkSq/OWQXg0p403gqQV91OIjX3WUL82bsL+YnFvhb13kGcP0una4pJInVTYBObm6xWQ0ALqRbCmydijmseoCjwXFG1x9LWzwpZ194Y3tCwEabzFaZ6TtucSYGc6M/huN/ieMcyt/HtUa8VRVgPa/RMMg7NTIjsYowSKCp7aH4H3SwKlWPaE2ii+o7RZYGkRX5Bpf+eF+dx2mTxUEghBhM3hmuFo2KhtrAX4TsTt7i0Bd1VjH7vNgEioMs5LZdACe3YdoksD2caWK3b1qF7pS2Xk8KogG9OepIiOdJberYfzuQVeQ+7WI7zSzTFa3Lr5GxZZoDIiVBXMqstdAaL1QI5yToThbwGdSQ7ic9RMdkY54OrcPyttjI3HZnXQr7+FhhsbJtLnqECJk="
 
@@ -13,12 +13,12 @@ node_js:
 services:
   - docker
 
+before_script:
+  - chmod +x test/run.sh
+
 script:
   - docker build -t $REPO .
-  - docker run -dit -p 80:8080 $REPO
-  - sleep 3
-  - docker ps -a
-  - curl -s http://127.0.0.1/ | grep 'hello, world'
+  - test/run.sh
 
 after_success:
   - docker images
