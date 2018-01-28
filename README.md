@@ -39,7 +39,7 @@ Containers Training: Hands-on introduction to Docker and CI/CD.
 
 ## Documentation
 
-Start [here](https://github.com/veggiemonk/awesome-docker) and [there](https://github.com/wsargent/docker-cheat-sheet).
+Start [here](https://github.com/veggiemonk/awesome-docker) and [there](https://github.com/wsargent/docker-cheat-sheet). Awesome images for [security](https://github.com/carpedm20/awesome-hacking#docker-images-for-penetration-testing--security) and [Ansible](https://github.com/ArtiomL/f5-ansible).
 
 &nbsp;&nbsp;
 
