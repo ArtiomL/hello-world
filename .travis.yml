@@ -13,12 +13,12 @@ node_js:
 services:
   - docker
 
+before_script:
+  - chmod +x test/run.sh
+
 script:
   - docker build -t $REPO .
-  - docker run -dit -p 80:8080 $REPO
-  - sleep 3
-  - docker ps -a
-  - curl -s http://127.0.0.1/ | grep 'hello, world'
+  - test/run.sh
 
 after_success:
   - docker images
