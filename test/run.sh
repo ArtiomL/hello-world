@@ -1,6 +1,6 @@
 #!/bin/bash
-set -xe
-set -o pipefail
+
+set -xeo pipefail
 
 REPO="artioml/hello-world"
 
