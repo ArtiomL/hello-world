@@ -1,14 +1,12 @@
-.. Intro to Docker Labs - F5 ISCFY17 documentation master file, created by
+.. Containers Training: Hands-on introduction to Docker and CI/CD documentation master file, created by
    sphinx-quickstart on Wed Oct 19 13:45:59 2016.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Intro to Docker Labs - F5 ISCFY17's documentation!
+Containers Training: Hands-on introduction to Docker and CI/CD
 =============================================================
 
 This document is to help you learn more about Docker. Though this session we will help you:
-* Access a docker environment (hosted in UDF)
-* Manipulate docker containers
 
    * Run a container (Create, Start, Stop, Delete, Status) 
    * Create a container
