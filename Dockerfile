@@ -1,7 +1,7 @@
 FROM alpine
 
 # Core dependencies
-RUN apk add --update --no-cache nodejs && \
+RUN apk add --update --no-cache nodejs-npm && \
 	rm -rf /var/cache/apk/*
 
 # hello, world
