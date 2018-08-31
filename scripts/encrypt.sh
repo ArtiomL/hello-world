@@ -13,10 +13,10 @@ travis encrypt DOCKER_USER="username"
 travis encrypt DOCKER_PASS="password"
 
 # Encrypt Heroku API key
-travis encrypt "api-key"
+travis encrypt "api_key"
 
 # Encrypt Slack API key
-travis encrypt "workspace:api-key"
+travis encrypt "workspace:token"
 
 # travis encrypt defaults to travis-ci.org (--org), for travis-ci.com use:
 travis login --pro --github-token personal_access_token
