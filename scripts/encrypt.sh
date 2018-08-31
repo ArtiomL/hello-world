@@ -17,3 +17,7 @@ travis encrypt "api-key"
 
 # Encrypt Slack API key
 travis encrypt "workspace:api-key"
+
+# travis encrypt defaults to travis-ci.org (--org), for travis-ci.com use:
+travis login --pro --github-token personal_access_token
+travis encrypt SOMEVAR="secretvalue" --com
