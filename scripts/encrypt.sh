@@ -20,4 +20,4 @@ travis encrypt "workspace:token"
 
 # travis encrypt defaults to travis-ci.org (--org), for travis-ci.com use:
 travis login --pro --github-token personal_access_token
-travis encrypt SOMEVAR="secretvalue" --com
+travis encrypt SOMEVAR="secretvalue" --pro
